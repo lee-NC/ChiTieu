@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border"
+        android:id="@+id/table">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btTC"
+                android:textSize="16sp"
+                android:layout_width="135dp"
+                android:textColor="@color/button_text_color"
+                style="?android:attr/borderlessButtonStyle"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:onClick="getTKTC"
+                android:text="TẤT CẢ"
+                />
+
+            <Button
+                android:id="@+id/btT"
+                android:textSize="16sp"
+                android:layout_width="135dp"
+                android:textColor="@color/button_text_color"
+                android:layout_height="wrap_content"
+                android:text="THÁNG"
+                android:backgroundTint="@color/white"
+                android:onClick="getTKT"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/btN"
+                android:textSize="16sp"
+                android:layout_width="135dp"
+                android:textColor="@color/button_text_color"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content"
+                android:text="NĂM"
+                android:onClick="getTKN"
+                style="?android:attr/borderlessButtonStyle"/>
+        </TableRow>
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/table"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bieu_do"
+        app:fabSize="normal"
+        android:onClick="getBD"
+        android:layout_marginBottom="155dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

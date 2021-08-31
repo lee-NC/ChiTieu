@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng thu"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="27dp"
+        android:textSize="21sp"
+        android:textColor="@color/white"
+        android:background="#9AB395"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="#697F67"
+        android:id="@+id/tongThu"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="#9AB395"
+        android:text="Tổng chi"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="#697F67"
+        android:id="@+id/tongChi"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"
+        android:background="#9AB395"
+        android:text="Còn lại"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="#697F67"
+        android:id="@+id/conLai"/>
+
+</LinearLayout>

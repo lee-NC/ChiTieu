@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Loại:" />
+
+        <Spinner
+            android:layout_width="180dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spDanhMuc"/>
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Khoảng tiền:" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <EditText
+            android:layout_width="130dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLength="20"
+            android:paddingLeft="15dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="VNĐ"
+            android:id="@+id/edTienDau"
+            android:inputType="number|numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLength="20"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edTienCuoi"
+            android:hint="VNĐ"
+            android:inputType="number|numberDecimal"/>
+    </TableRow>
+
+</LinearLayout>

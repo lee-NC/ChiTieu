@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+        <TableRow
+            android:padding="15dp"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Tháng:"/>
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:entries="@array/thang"
+                android:id="@+id/lichTKTT"/>
+
+
+        </TableRow>
+        <TableRow
+            android:padding="15dp"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Năm:"/>
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:entries="@array/nam"
+                android:id="@+id/lichTKTN"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="16"
+    tools:context=".Chart.ChartActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/teal_700"
+        android:minHeight="50dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart"
+        app:title="Thống kê"
+        android:textSize="30sp"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="126dp"
+        android:id="@+id/toolbarChart"/>
+
+    <FrameLayout
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarChart">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart">
+
+        <RadioButton
+            android:id="@+id/btthoiGianTuyChon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê theo thời gian tùy chọn"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btthoiGianThang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê theo tháng"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btthoiGianNam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê theo năm"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:minHeight="50dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@id/tab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Quản lý thu chi"
+        android:textSize="30sp"
+        app:titleTextColor="@color/white"
+        tools:layout_editor_absoluteX="126dp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        app:tabTextColor="#4DB6AC"
+        app:tabSelectedTextColor="#BC54"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        app:tabIconTint="#27A5B5"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        app:layout_constraintTop_toBottomOf="@id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

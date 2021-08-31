@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Năm: "
+            android:textColor="#697F67"
+            android:textSize="21sp"/>
+        <Spinner
+            android:id="@+id/spNamN"
+            android:layout_width="55dp"
+            android:background="@color/white"
+            android:backgroundTint="#9AB395"
+            android:layout_height="wrap_content"
+            android:entries="@array/nam"/>
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng thu năm"
+        android:textSize="21sp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"
+        android:background="#9AB395"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#697F67"
+        android:id="@+id/tongThuN"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white"
+        android:background="#9AB395"
+        android:text="Tổng chi tháng"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="#697F67"
+        android:id="@+id/tongChiN"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:background="#9AB395"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:text="Còn lại năm"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#697F67"
+        android:id="@+id/conLaiN"/>
+
+</LinearLayout>
